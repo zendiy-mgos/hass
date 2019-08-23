@@ -1,0 +1,25 @@
+author: ZenDIY
+type: lib
+description: Home Assistant | Integration API library
+version: 1.2
+
+includes:
+  - include
+sources:
+  - src
+filesystem:
+config_schema:
+  - ["hass", "o", {title: "Home Assistant integration configuration"}] 
+  - ["hass.publish", "o", {title: "General publishing state settings"}]
+  - ["hass.publish.on_connect", "b", true, {title: "Enable or disable the publish of state when (re)connected"}]
+  - ["hass.publish.interval", "i", 0, {title: "The time interval in milliseconds for publishing state periodically. Set to 0(zero) to diasable it. Default value 0(zero)."}]
+  - ["hass.toggle_state", "o", {title: "Toggle state default values"}]
+  - ["hass.toggle_state.on", "s", "ON", {title: "The value that represents the ON state (default value 'ON')"}]
+  - ["hass.toggle_state.off", "s", "OFF", {title: "The value that represents the OFF state (default value 'OFF')"}]
+
+libs:
+tags:
+  - c
+  - docs:misc:Empty
+
+manifest_version: 2017-09-29
