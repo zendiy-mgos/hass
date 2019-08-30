@@ -1,6 +1,5 @@
 author: ZenDIY
 type: lib
-name: hass
 description: Home Assistant | Integration API library
 version: 1.2
 
