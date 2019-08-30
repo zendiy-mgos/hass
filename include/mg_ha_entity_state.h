@@ -119,22 +119,37 @@ typedef ha_entity_xstate_history_t* HA_ENTITY_BSTATE;
  */
 bool mg_ha_bstate_init(ha_bstate_t *state, ha_bstate_cfg_t *cfg);
 
+bool mgos_hass_entity_dstate_set(HA_ENTITY_XSTATE state,
+                                 long value,
+                                 const char *attribs);
 
 bool mgos_hass_entity_dstate_setf(HA_ENTITY_XSTATE state,
-                                 long value,
-                                 const char *attribs_fmt, ...);
+                                  long value,
+                                  const char *attribs_fmt, ...);
+
+bool mgos_hass_entity_sstate_set(HA_ENTITY_XSTATE state,
+                                 const char *value,
+                                 const char *attribs);
 
 bool mgos_hass_entity_sstate_setf(HA_ENTITY_XSTATE state,
-                                 const char *value,
-                                 const char *attribs_fmt, ...);
+                                  const char *value,
+                                  const char *attribs_fmt, ...);
+
+bool mgos_hass_entity_fstate_set(HA_ENTITY_XSTATE state,
+                                 double value,
+                                 const char *attribs);
 
 bool mgos_hass_entity_fstate_setf(HA_ENTITY_XSTATE state,
-                                 double value,
-                                 const char *attribs_fmt, ...);
+                                  double value,
+                                  const char *attribs_fmt, ...);
+
+bool mgos_hass_entity_bstate_set(HA_ENTITY_BSTATE state,
+                                 enum ha_toggle_state value,
+                                 const char *attribs);
 
 bool mgos_hass_entity_bstate_setf(HA_ENTITY_BSTATE state,
-                                 enum ha_toggle_state value,
-                                 const char *attribs_fmt, ...);
+                                  enum ha_toggle_state value,
+                                  const char *attribs_fmt, ...);
 
 bool mg_ha_entity_xstate_mark_as_pub(ha_entity_xstate_history_t *h);
 
