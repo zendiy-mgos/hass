@@ -13,8 +13,8 @@ It is not necessary to include this base library into your mongoose-os project. 
 	    "interval": 0
 	  },
 	  "toggle_state": {
-	    "on": "s",
-		"off": "s"
+	    "on": "ON",
+		"off": "OFF"
 	  }
     }
 
