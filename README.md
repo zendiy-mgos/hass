@@ -4,4 +4,4 @@ The base [mongoose-os](https://mongoose-os.com) library for making [Home Assista
 ## Usage
 It is not necessary to include this base library into your mongoose-os project. Include instead one of the followings:
  - [hass-mqtt](https://github.com/zendiy-mgos/hass-mqtt) - The mongoose-os library for making Home Assistant compatible MQTT devices
- - [hass-mqtt](https://github.com/zendiy-mgos/hass-mqtt-discovery) - The mongoose-os library for making MQTT devices dicoverable in Home Assistant
+ - [hass-mqtt-discovery](https://github.com/zendiy-mgos/hass-mqtt-discovery) - The mongoose-os library for making MQTT devices dicoverable in Home Assistant
