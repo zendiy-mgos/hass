@@ -20,6 +20,7 @@ config_schema:
 libs:
 tags:
   - c
-  - docs:misc:Empty
+  - js
+  - home assistant
 
 manifest_version: 2017-09-29
