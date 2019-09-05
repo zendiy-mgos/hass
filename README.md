@@ -36,8 +36,7 @@ typedef struct ha_entity_handle {
   const char *entity_type;
 } ha_entity_handle_t;
 ```
-***The entity handle that can be used as parameter in many other API.***
-
+**The entity handle that can be used as parameter in many other API.**
 |Field||
 |--|--|
 |object_id|The object ID of the entity configured in Home Assistant.|
@@ -50,7 +49,7 @@ typedef struct ha_entity_cfg {
   const char *device_id;
 } ha_entity_cfg_t;
 ```
-**Configuration parameters for creatig an entity.** For instance a binary sensor, a switch, etc.
+**Configuration parameters for creating an entity.** For instance, for creating a binary sensor, a switch, etc.
 
 |Field||
 |--|--|
