@@ -37,7 +37,8 @@ typedef struct ha_entity_handle {
 } ha_entity_handle_t;
 ```
 The entity handle that can be used as parameter in all other API.
-|Properties||
+
+|||
 |--|--|
 |object_id|The Home Assistant entity ID.|
 |device_id|Optional. The device ID. if null, the `device.id` config in the `mos.yml` file is used.|
