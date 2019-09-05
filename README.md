@@ -52,7 +52,7 @@ typedef struct ha_entity_cfg {
   const char *device_id;
 } ha_entity_cfg_t;
 ```
-Configuration parameters for creating an entity (e.g. binary sensor, switch, etc).
+Configuration parameters for creating an entity (e.g. a binary sensor, a switch, etc).
 
 |Field||
 |--|--|
