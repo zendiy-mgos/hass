@@ -1,4 +1,4 @@
-Home Assistant Mongoose OS base library
+Home Assistant Mongoose-OS base library
 =======================================
 # Overview
 The base [Mongoose-OS](https://mongoose-os.com) library for making [Home Assistant](https://www.home-assistant.io) compatible devices.
