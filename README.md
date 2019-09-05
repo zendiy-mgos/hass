@@ -58,12 +58,21 @@ Configuration parameters for creating an entity (e.g. binary sensor, switch, etc
 |--|--|
 |object_id|The object ID of the entity configured in Home Assistant. For exemple, For example, `kitchen_temp` in case of entity `sensor.kitchen_temp`.|
 |device_id|(Optional) The device ID. If `NULL`, the `device.id` config in the `mos.yml` file is used.|
-### HA_NULL_ENTITY_CFG
-```c
-#define HA_NULL_ENTITY_CFG(void) {NULL, NULL}
-```
-Macro for initializing an empty `ha_entity_cfg_t` struct.
+### HA_NULL_ENTITY_CFG()
+Macro for initializing an empty `[ha_entity_cfg_t](#ha_entity_cfg_t)` struct.
 ```c
 /* Example: use the macro to initialize the struct */
 ha_entity_cfg_t entity_cfg = HA_NULL_ENTITY_CFG();
+```
+### HA_ENTITY_CFG(object_id)
+Macro for initializing a `[ha_entity_cfg_t](#ha_entity_cfg_t)` struct with a given object ID.
+```c
+/* Example: use the macro to initialize the struct */
+ha_entity_cfg_t entity_cfg = HA_ENTITY_CFG("kitchen_temp");
+```
+### HA_DEVICE_ENTITY_CFG(object_id, device_id)
+Macro for initializing a `[ha_entity_cfg_t](#ha_entity_cfg_t)` struct with a given object ID ad device ID.
+```c
+/* Example: use the macro to initialize the struct */
+ha_entity_cfg_t entity_cfg = HA_DEVICE_ENTITY_CFG("kitchen_temp", "MYDEVICE_O1");
 ```
