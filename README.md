@@ -37,6 +37,7 @@ typedef struct ha_entity_handle {
 } ha_entity_handle_t;
 ```
 **The entity handle that can be used as parameter in many other API.**
+
 |Field||
 |--|--|
 |object_id|The object ID of the entity configured in Home Assistant.|
