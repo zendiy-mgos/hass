@@ -40,8 +40,8 @@ The entity handle that can be used as parameter in all other API.
 
 |||
 |--|--|
-|object_id|The Home Assistant entity ID.|
-|device_id|Optional. The device ID. if null, the `device.id` config in the `mos.yml` file is used.|
+|object_id|The object ID of the entity configured in Home Assistant. For exemple, For example, `kitchen_temp` in case of entity `sensor.kitchen_temp`.|
+|device_id|(Optional) The device ID. If `NULL`, the `device.id` config in the `mos.yml` file is used.|
 |entity_type|The entity type. It could be `'binary_sensor'`, `'sensor'` or `'switch'`.|
 ### ha_entity_cfg_t
 ```c
