@@ -16,7 +16,7 @@ The following configuration section is added to the `conf0.json` file in your mo
   },
   "toggle_state": {
     "on": "ON",
-	"off": "OFF"
+    "off": "OFF"
   }
 }
 ```
