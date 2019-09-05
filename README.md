@@ -26,3 +26,25 @@ The following configuration section is added to the `conf0.json` file in your mo
 |hass.publish.**interval**|integer|`0`|Interval in milliseconds for publishing state; set to `0` for disabling the timer|
 |hass.toggle_state.**on**|string|`'ON'`|The value that represents the ON state|
 |hass.toggle_state.**off**|string|`'OFF'`|The value that represents the OFF state|
+# C/C++ API reference
+## Common data types and API
+### HA_ENTITY_HANDLE
+```c
+typedef struct ha_entity_handle {
+  char *object_id;
+  char *device_id;
+  const char *entity_type;
+} ha_entity_handle_t;
+```
+The entity handle that can be used as parameter in all API.
+|Properties||
+|object_id|The Home Assistant entity ID.|
+|device_id|Optional. The decive ID. if null, the `device.id` config in the `mos.yml` file is used.|
+|entity_type|The entity type. It could be `'binary_sensor'`, `'sensor'` or `'switch'`.|
+### ha_entity_cfg_t
+```c
+typedef struct ha_entity_cfg {
+  const char *object_id;
+  const char *device_id;
+} ha_entity_cfg_t;
+```
