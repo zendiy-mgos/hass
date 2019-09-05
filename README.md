@@ -23,7 +23,7 @@ The following configuration section is added to the `conf0.json` file in your mo
 |Property|Type|Default|Description|
 |--|--|--|--|
 |hass.publish.**on_connect**|boolean|`true`|Enable/disable the state publish on (re)connected|
-|hass.publish.**interval**|integer|`0`|Interval in milliseconds for publishing state; set to `0` for disabling the timer|
+|<a name="hass.publish.interval"></a>hass.publish.**interval**|integer|`0`|Interval in milliseconds for publishing state; set to `0` for disabling the timer|
 |hass.toggle_state.**on**|string|`'ON'`|The value that represents the ON state|
 |hass.toggle_state.**off**|string|`'OFF'`|The value that represents the OFF state|
 # C/C++ API reference
