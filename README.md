@@ -35,8 +35,10 @@ typedef struct ha_entity_handle {
   char *device_id;
   const char *entity_type;
 } ha_entity_handle_t;
+
+typedef ha_entity_handle_t* HA_ENTITY_HANDLE;
 ```
-**The entity handle that can be used as parameter in many other API.**
+The entity HANDLE that can be used as parameter in many other API.
 
 |Field||
 |--|--|
@@ -50,7 +52,7 @@ typedef struct ha_entity_cfg {
   const char *device_id;
 } ha_entity_cfg_t;
 ```
-**Configuration parameters for creating an entity.** For instance, for creating a binary sensor, a switch, etc.
+Configuration parameters for creating an entity (e.g. binary sensor, switch, etc).
 
 |Field||
 |--|--|
