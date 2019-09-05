@@ -36,12 +36,12 @@ typedef struct ha_entity_handle {
   const char *entity_type;
 } ha_entity_handle_t;
 ```
-The entity handle that can be used as parameter in all other API.
+***The entity handle that can be used as parameter in many other API.***
 
-|||
+|Field||
 |--|--|
-|object_id|The object ID of the entity configured in Home Assistant. For exemple, For example, `kitchen_temp` in case of entity `sensor.kitchen_temp`.|
-|device_id|(Optional) The device ID. If `NULL`, the `device.id` config in the `mos.yml` file is used.|
+|object_id|The object ID of the entity configured in Home Assistant.|
+|device_id|The device ID. It may be the `device.id` config value in the `mos.yml` file.|
 |entity_type|The entity type. It could be `'binary_sensor'`, `'sensor'` or `'switch'`.|
 ### ha_entity_cfg_t
 ```c
@@ -50,3 +50,9 @@ typedef struct ha_entity_cfg {
   const char *device_id;
 } ha_entity_cfg_t;
 ```
+**Configuration parameters for creatig an entity.** For instance a binary sensor, a switch, etc.
+
+|Field||
+|--|--|
+|object_id|The object ID of the entity configured in Home Assistant. For exemple, For example, `kitchen_temp` in case of entity `sensor.kitchen_temp`.|
+|device_id|(Optional) The device ID. If `NULL`, the `device.id` config in the `mos.yml` file is used.|
